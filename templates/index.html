@@ -1,0 +1,220 @@
+{% extends 'base.html' %}
+
+{% block conteudo %}
+
+  <section id="apresentacao" class="about">
+    <div class="about-container">
+
+<img src="{{ url_for('static', filename='img/isa.jpeg') }}" alt="Foto de Isabela Alves">
+      <div class="about-text">
+         <h2>Sobre Mim</h2>
+        <p>
+          Meu nome é Isabela, sou estudante de Desenvolvimento de Software Multiplataforma na FATEC, 
+          com grande interesse em tecnologia e inovação. Possuo conhecimentos em programação, automação e organização 
+          de informações, buscando constantemente aprimorar minhas habilidades técnicas e profissionais.
+        </p>
+
+        <h3>Objetivos</h3>
+        <ul class="lista">
+          <li>
+            <strong>Profissional:</strong> Aplicar meus conhecimentos e evoluir continuamente na área de tecnologia.
+          </li>
+        </ul>
+
+        <div class="skills-about">
+          <div class="skills-col">
+            <h3>Hard Skills</h3>
+            <ul>
+              <li>Informática Avançada</li>
+              <li>Desenvolvimento de Sistemas</li>
+              <li>Atendimento ao Cliente</li>
+              <li>Rotinas Administrativas</li>
+              <li>Organização de Informações</li>
+            </ul>
+          </div>
+
+          <div class="skills-col">
+            <h3>Soft Skills</h3>
+            <ul>
+              <li>Comunicação Clara</li>
+              <li>Proatividade</li>
+              <li>Trabalho em Equipe</li>
+              <li>Responsabilidade</li>
+              <li>Aprendizado Contínuo</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="projetos-api" class="projects">
+    <h2>Projetos API</h2>
+    <p class="projects-subtitle">
+      Projetos de Aprendizagem por Projetos (API) desenvolvidos na FATEC.
+    </p>
+
+    <div class="projects-container">
+      <article class="project-card">
+        <h3>API 1º Semestre &ndash; Negado pelo Banco: Crédito Inclusivo com Dados do BCB</h3>
+        <ul>
+          <li><strong>Empresa parceira:</strong> (Avocredit) Projeto acadêmico Fatec SJC</li>
+          <li><strong>Problema:</strong> Populações historicamente recusadas por grandes instituições financeiras não têm acesso a crédito, não por falta de capacidade de pagamento, mas pela escassez de dados que a comprovem. A visão tradicional de risco ignora o consumo reprimido e a capacidade real de pagamento sustentável dessas pessoas.</li>
+          <li><strong>Tecnologias utilizadas:</strong> Python, Flask, HTML, CSS, JavaScript, Google Colab, Pandas, Chart.js, Git/GitHub, Lefthook, Ruff</li>
+          <li><strong>Solução:</strong> Um sistema web que identifica regiões com alto potencial de crédito, mas desassistidas pelo sistema financeiro tradicional. Utilizando dados públicos do BCB/BACEN, IBGE e Serasa processados via Google Colab, a aplicação calcula um Score de Oportunidade por região, exibindo indicadores, filtros e gráficos interativos desenvolvidos em Flask e Chart.js.</li>
+          <li><strong>Minhas contribuições:</strong> Participação na criação do design frontend com HTML/CSS e integração de gráficos para visualização de indicadores territoriais.</li>
+          <li><strong>Repositório:</strong> <a href="https://github.com/fatec-sjc-404-team/API-DSM-1SEMESTRE-2026" target="_blank" rel="noopener">fatec-sjc-404-team/API-DSM-1SEMESTRE-2026</a></li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section id="trajetoria" class="timeline">
+    <h2>Formação Acadêmica e Experiência Profissional</h2>
+    <p class="timeline-subtitle">Minha trajetória acadêmica e profissional.</p>
+
+    <div class="timeline-container">
+
+      <div class="timeline-item right">
+        <span class="dot"></span>
+        <div class="timeline-card">
+          <span class="badge badge-edu">Em andamento</span>
+          <h3>Desenvolvimento de Software Multiplataforma</h3>
+          <small>FATEC São José dos Campos &middot; </small>
+          <p>Graduação tecnológica com foco em desenvolvimento web, mobile, análise de dados, arquitetura de software e metodologias ágeis.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item left">
+        <span class="dot"></span>
+        <div class="timeline-card">
+           <span class="tag">202</span>
+          <span class="badge badge-exp">Experiência</span>
+          <h3>Jovem Aprendiz &middot; Desenvolvimento de Sistemas</h3>
+          <small>Petrobras</small>
+          <p>Atuação no ambiente corporativo, apoio no desenvolvimento de projetos internos (IoT e automação) e aprendizado contínuo de boas práticas organizacionais e técnicas.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item right">
+        <span class="dot"></span>
+        <div class="timeline-card">
+           <span class="tag">2026</span>
+          <span class="badge badge-edu">Formação</span>
+          <h3>Técnico em Desenvolvimento de Sistemas</h3>
+          <small>SENAI Santos Dumont</small>
+          <p>Capacitação técnica em lógica de programação, banco de dados, desenvolvimento web e engenharia de software.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item left">
+        <span class="dot"></span>
+        <div class="timeline-card">
+          <span class="tag">2024</span>
+          <span class="badge badge-exp">Experiência</span>
+          <h3>Jovem Aprendiz &middot; Agente Cidadão</h3>
+          <small>Fundhas</small>
+          <p>Experiência inicial com rotinas administrativas, atendimento ao público e organização de documentos, desenvolvendo soft skills essenciais.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <h3 class="subtitulo">Projetos Profissionais Desenvolvidos</h3>
+
+    <div class="projects-container">
+      <article class="project-card">
+        <h3>Automação IoT com ESP32</h3>
+        <ul>
+          <li><strong>Contexto:</strong> Vivência Profissional (Petrobras)</li>
+          <li><strong>Área:</strong> Internet das Coisas (IoT)</li>
+          <li><strong>Descrição:</strong> Automação e controle de dispositivos via microcontrolador ESP32.</li>
+          <li><strong>Tecnologias:</strong> ESP32, Wi-Fi, C/C++, HTML, CSS, Wokwi</li>
+          <li><strong>Aprendizado:</strong> Comunicação entre hardware/software e automação de processos.</li>
+        </ul>
+      </article>
+
+      <article class="project-card">
+        <h3>Informatização da Análise de Falhas</h3>
+        <ul>
+          <li><strong>Contexto:</strong> Vivência Profissional (Petrobras)</li>
+          <li><strong>Área:</strong> Desenvolvimento de Sistemas / Manutenção Industrial</li>
+          <li><strong>Descrição:</strong> Aplicação para informatizar o registro de falhas operacionais e a geração de relatórios técnicos, promovendo agilidade, padronização e confiabilidade.</li>
+          <li><strong>Tecnologias:</strong> Levantamento de Requisitos, Modelagem de Processos, Testes de Software</li>
+          <li><strong>Aprendizado:</strong> União entre teoria e prática na resolução de problemas industriais reais, usabilidade e aderência às necessidades de engenharia.</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section id="cursos" class="certificates">
+    <div class="certificates-header">
+      <span class="circle"></span>
+      <h2>Cursos e Certificações Complementares</h2>
+      <p>Aprimoramento de conhecimentos em instituições parceiras.</p>
+    </div>
+
+    <div class="certificates-container">
+      <div class="certificate-card">
+        <h3>Informática Avançada</h3>
+        <span>Microcamp</span>
+      </div>
+
+      <div class="certificate-card">
+        <h3>Atendimento ao Cliente</h3>
+        <span>Cephas</span>
+      </div>
+
+      <div class="certificate-card">
+        <h3>Administração</h3>
+        <span>Cephas</span>
+      </div>
+
+      <div class="certificate-card">
+        <h3>Empreendedorismo como Opção de Carreira</h3>
+        <span>Sebrae</span>
+      </div>
+
+      <div class="certificate-card">
+        <h3>Computação Gráfica e Artes</h3>
+        <span>Advanced</span>
+      </div>
+
+      <div class="certificate-card">
+        <h3>Python</h3>
+        <span>Senai</span>
+      </div>
+
+      <div class="certificate-card">
+        <h3> Power BI</h3>
+        <span>Senai</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" class="contato">
+    <div class="contato-container">
+      <div class="footer-left">
+        <h2 class="footer-logo">&lt;&gt; Isabela Alves</h2>
+        <p class="footer-text">
+          Estudante de Desenvolvimento de Software Multiplataforma em busca de oportunidades 
+          para aplicar conhecimentos e evoluir profissionalmente na área de tecnologia.
+        </p>
+      </div>
+
+      <div class="footer-right">
+        <h3>Contato</h3>
+        <ul>
+          <li><a href="https://github.com/isa-alvxs" target="_blank" rel="noopener">GitHub &ndash; github.com/isa-alvxs</a></li>
+          <li><a href="https://www.linkedin.com/in/isabela-alves-778402316" target="_blank" rel="noopener">LinkedIn &ndash; linkedin.com/in/isabela-alves-778402316</a></li>
+          <li><a href="mailto:isabelaalves1237i@gmail.com">isabelaalves1237i@gmail.com</a></li>
+          <li>(12) 98311-1945</li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="footer-copy">Desenvolvido por Isabela Alves &copy; 2026</p>
+  </section>
+
+{% endblock %}
